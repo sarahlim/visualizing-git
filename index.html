@@ -39,6 +39,8 @@
     </marker>
 </svg>
 
+<button data-reset class="reset-button">Reset</button>
+
 <script type="text/javascript">
 require(['explaingit', 'demos'], function (explainGit, demos) {
     function ready(fn) {
@@ -125,6 +127,9 @@ require(['explaingit', 'demos'], function (explainGit, demos) {
     window.pres = function () {
       document.getElementById('last-command').style.display = 'block'
     }
+
+  const resetButton = document.querySelector('[data-reset]');
+  resetButton.addEventListener('click', resetVis);
 });
 </script>
 </body>

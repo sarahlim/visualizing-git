@@ -322,3 +322,8 @@ g.head-tag > text {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.reset-button {
+  position: absolute;
+  right: 0;
+}
